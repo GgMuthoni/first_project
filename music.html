@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+    <style>
+      .harmony {
+        border: 1px solid black;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 30px auto;
+        display: block;
+        width: 30%;
+        background: linear-gradient(
+          -225deg,
+          #7742b2 0%,
+          #f180ff 52%,
+          #fd8bd9 100%
+        );
+      }
+      h1 {
+        text-decoration: underline;
+        color: #200f21;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+      }
+      h2 {
+        text-align: center;
+        font-size: 50;
+        font-weight: 300;
+        color: black;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 16px;
+        opacity: 0.7;
+        text-align: center;
+        line-height 16px;
+        font-family: monospace;
+      }
+      a {
+        margin: 0 auto;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #cb22d7;
+        background: #cb22d7;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: black;
+        border: 1px solid #cb22d7;
+      }
+
+      .account {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="harmony">
+      <h1>Music of the Soul</h1>
+      <h2>Music Resonance</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/853/original/music-notes-theme-ks7.jpg?1664102177"
+        alt="Music Note"
+        width="300"
+      />
+      <hr />
+      <p>
+        Music is the art of arranging sound to create some combination of form,
+        harmony, melody, rhythm or otherwise expressive content. Exact
+        definitions of music vary considerably around the world, though it is an
+        aspect of all human societies, a
+        <em> cultural universal</em>.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Music"
+        target="_blank"
+        class="Learn-more"
+      >
+        <strong> Visit wikipedia</strong>
+      </a>
+      <button class="play-button">Music Playlist</button>
+      <p>
+        <span class="account"> Website:</span>
+        @en.wikipedia.org/wiki/Music_genre
+      </p>
+    </div>
+    <script>
+      function playlist() {
+        let name = prompt("What is your name?");
+        prompt("What genre do you like?");
+        if (name) {
+          alert(
+            "Thank you," +
+              name +
+              " a playlist will be recommended based on your genre 🎵"
+          );
+        } else {
+          alert("Sorry, try again ☹");
+        }
+      }
+      let Btn = document.querySelector("button");
+      Btn.addEventListener("click", playlist);
+    </script>
+  </body>
+</html>
